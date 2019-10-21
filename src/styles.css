@@ -1,0 +1,64 @@
+.App {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.items {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 2px;
+  padding: 10px;
+  flex-grow: 1;
+  width: 30%;
+}
+.items span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.items p {
+  text-align: justify;
+}
+button {
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+}
+input {
+  width: 600px;
+  height: 24px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  margin: auto;
+  margin-bottom: 10px;
+  box-shadow: 10px 5px 5px gray;
+}
+.lds-dual-ring {
+  display: block;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
